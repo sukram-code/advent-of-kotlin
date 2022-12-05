@@ -3,6 +3,20 @@ package day05
 import common.inputLines
 import common.stopIfInvalid
 
+/**
+ * For this solution, input was modified
+ * by filling empty cargo places with [0],
+ * by remove cargo column numbers and empty line before instructions.
+ * Example of modified input:
+ *
+ * [0] [D] [0]
+ * [N] [C] [0]
+ * [Z] [M] [P]
+ * move 1 from 2 to 1
+ * move 3 from 1 to 3
+ * move 2 from 2 to 1
+ * move 1 from 1 to 2
+ */
 fun main(args: Array<String>) {
     stopIfInvalid(args)
     val lines = inputLines("05", args[0]).partition { !it.startsWith("move") }
