@@ -10,8 +10,8 @@ fun stopIfInvalid(args: Array<String>) {
     }
 }
 
-fun inputLines(dayId: String, fileName: String): List<String> {
-    return File("solutions/day$dayId/$fileName").readLines()
+fun inputLines(year: Int = 2022, dayId: String, fileName: String): List<String> {
+    return File("solutions/year_$year/day$dayId/$fileName").readLines()
 }
 
 fun Any?.printIt() = println(this)

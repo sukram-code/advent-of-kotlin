@@ -6,7 +6,7 @@ import common.stopIfInvalid
 
 fun main(args: Array<String>) {
     stopIfInvalid(args)
-    val input = inputLines("06", args[0])[0]
+    val input = inputLines(dayId = "06", fileName = args[0])[0]
     firstMarker(input).printIt()
     firstMarker(input, 14).printIt()
 }
