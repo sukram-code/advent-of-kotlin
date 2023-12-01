@@ -1,4 +1,4 @@
-package day05
+package year_2022.day05
 
 import common.inputLines
 import common.stopIfInvalid
@@ -19,7 +19,7 @@ import common.stopIfInvalid
  */
 fun main(args: Array<String>) {
     stopIfInvalid(args)
-    val lines = inputLines("05", args[0]).partition { !it.startsWith("move") }
+    val lines = inputLines(dayId = "05", fileName = args[0]).partition { !it.startsWith("move") }
     val reversedLines = lines.first.reversed()
         .map { it.replace("[\\[\\]\\s]".toRegex(), "") }
         .map { it.toCharArray() }

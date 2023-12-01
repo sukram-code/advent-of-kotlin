@@ -1,13 +1,14 @@
-package day06
+package year_2022.day06
 
 import common.inputLines
+import common.printIt
 import common.stopIfInvalid
 
 fun main(args: Array<String>) {
     stopIfInvalid(args)
     val input = inputLines("06", args[0])[0]
-    println(firstMarker(input))
-    println(firstMarker(input, 14))
+    firstMarker(input).printIt()
+    firstMarker(input, 14).printIt()
 }
 
 fun firstMarker(signal: String, marker: Int = 4): Int {

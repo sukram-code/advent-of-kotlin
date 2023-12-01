@@ -1,11 +1,11 @@
-package day03
+package year_2022.day03
 
 import common.inputLines
 import common.stopIfInvalid
 
 fun main(args: Array<String>) {
     stopIfInvalid(args)
-    val lines = inputLines("03", args[0])
+    val lines = inputLines(dayId = "03", fileName = args[0])
     val totalPriority = lines
         .map { it.toRucksack() }
         .map { it.first.filter { item -> it.second.contains(item) }.toCharArray().distinct() }

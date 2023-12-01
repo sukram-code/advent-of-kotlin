@@ -1,11 +1,11 @@
-package day02
+package year_2022.day02
 
 import common.inputLines
 import common.stopIfInvalid
 
 fun main(args: Array<String>) {
     stopIfInvalid(args)
-    val lines = inputLines("02", args[0])
+    val lines = inputLines(dayId = "02", fileName = args[0])
     println(lines.toRoundsByMove().sumOf { it.score })
     println(lines.toRoundsByOutcome().sumOf { it.score })
 }

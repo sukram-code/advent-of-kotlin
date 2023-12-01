@@ -1,11 +1,11 @@
-package day01
+package year_2022.day01
 
 import common.inputLines
 import common.stopIfInvalid
 
 fun main(args: Array<String>) {
     stopIfInvalid(args)
-    val elves = inputLines("01", args[0])
+    val elves = inputLines(dayId = "01", fileName = args[0])
         .toElves()
         .sortedByDescending { it.calories }
     println("Top 1 Elf has ${elves[0].calories} calories")

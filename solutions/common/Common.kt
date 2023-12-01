@@ -13,3 +13,5 @@ fun stopIfInvalid(args: Array<String>) {
 fun inputLines(dayId: String, fileName: String): List<String> {
     return File("solutions/day$dayId/$fileName").readLines()
 }
+
+fun Any?.printIt() = println(this)

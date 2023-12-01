@@ -1,11 +1,11 @@
-package day04
+package year_2022.day04
 
 import common.inputLines
 import common.stopIfInvalid
 
 fun main(args: Array<String>) {
     stopIfInvalid(args)
-    val elfPairs = inputLines("04", args[0])
+    val elfPairs = inputLines(dayId = "04", fileName = args[0])
         .toElfPairs()
 
     val fullOverlaps = elfPairs

@@ -1,5 +1,4 @@
-# Advent of code 2022
+# Advent of code in Kotlin
 
 https://adventofcode.com/2022
-
-Kotlin
+https://adventofcode.com/2023
